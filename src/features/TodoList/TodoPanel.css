@@ -1,0 +1,141 @@
+@media only screen and (min-width: 1025px) {
+  .todo-tile {
+    margin: 16px;
+    position: relative;
+    padding: 36px;
+    font-size: 24px;
+    font-weight: 600;
+    width: 650px;
+
+    text-align: left;
+
+    border-radius: 8px;
+    color: var(--primary);
+    background-color: var(--shapes);
+    border: 3px solid var(--primary);
+
+    transition: transform 0.3s;
+    transform: scale(1);
+  }
+
+  .done-tile {
+    margin: 16px;
+    position: relative;
+    padding: 36px;
+    font-size: 24px;
+    font-weight: 600;
+    width: 650px;
+
+    color: white;
+    background-color: var(--secondary);
+    border-radius: 8px;
+    border: 3px solid var(--primary);
+
+    text-align: left;
+    transition: transform 0.3s;
+    transform: scale(1);
+  }
+
+  .todo-tile:hover,
+  .done-tile:hover {
+    transition: transform 0.3s;
+    transform: scale(1.02);
+  }
+
+  .todo-new-container {
+    margin: 16px;
+    margin-top: 0;
+    width: 600px;
+    color: var(--secondary);
+    background-color: var(--shapes);
+    border-radius: 8px;
+    border: 3px solid var(--primary);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: transform 0.3s;
+    transform: scale(1);
+  }
+
+  .todo-new-container:hover {
+    transition: transform 0.3s;
+    transform: scale(1.5);
+  }
+
+  .todo-new-input {
+    width: 450px;
+    height: 48px;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: var(--background);
+    border: 3px solid var(--primary);
+    padding-left: 16px;
+  }
+
+  .todo-new-button {
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
+    color: var(--secondary);
+    transition: transform 0.3s;
+    transform: scale(1);
+  }
+
+  .todo-new-button:hover {
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
+    color: var(--success);
+    transition: transform 0.3s;
+    transform: scale(1.5);
+  }
+
+  .todo-delete-button {
+    top: -10%;
+    left: 90%;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    position: absolute;
+    color: var(--secondary);
+    background-color: var(--shapes);
+    border: 3px solid var(--primary);
+    transition: transform 0.3s;
+    transform: scale(1);
+  }
+
+  .todo-delete-button:hover {
+    transition: transform 0.3s;
+    transform: scale(2);
+    color: var(--faillure);
+    border: 3px solid var(--faillure);
+    background-color: var(--shapes);
+  }
+
+  .todo-done-button {
+    top: -10%;
+    left: 90%;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    position: absolute;
+    color: var(--secondary);
+    background-color: var(--shapes);
+    border: 3px solid var(--primary);
+    transition: transform 0.3s;
+    transform: scale(1);
+    z-index: -5;
+  }
+
+  .todo-done-button:hover {
+    transition: transform 0.3s;
+    transform: scale(1.5);
+    color: var(--success);
+    border: 3px solid var(--success);
+    background-color: var(--shapes);
+  }
+}

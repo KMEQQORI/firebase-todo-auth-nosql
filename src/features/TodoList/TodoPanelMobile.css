@@ -1,0 +1,106 @@
+@media only screen and (max-width: 1024px) {
+  .todo-tile {
+    margin-top: 48px;
+    padding: 50px 5%;
+    position: relative;
+    font-size: 24px;
+    font-weight: 600;
+    width: 88%;
+    color: white;
+    background-color: var(--primary);
+    text-align: left;
+    transition: transform 0.3s;
+    transform: scale(1);
+
+    border-radius: 8px;
+    color: var(--primary);
+    background-color: var(--shapes);
+    border: 2px solid var(--primary);
+  }
+
+  .done-tile {
+    margin-top: 48px;
+    padding: 50px 5%;
+    position: relative;
+    font-size: 24px;
+    font-weight: 600;
+    width: 88%;
+
+    text-align: left;
+
+    color: white;
+    background-color: var(--secondary);
+    border-radius: 8px;
+    border: 2px solid var(--primary);
+
+    transition: transform 0.3s;
+    transform: scale(1);
+  }
+
+  .todo-list-container {
+    width: 100%;
+  }
+
+  .todo-new-container {
+    margin-top: 0;
+    width: 90%;
+    padding: 5%;
+    color: var(--secondary);
+    background-color: var(--shapes);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid var(--primary);
+  }
+
+  .todo-new-input {
+    width: 80%;
+    height: 48px;
+    border-radius: 8px;
+    background-color: var(--background);
+    border: 3px solid var(--primary);
+    padding-left: 16px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .todo-new-button {
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
+    color: var(--secondary);
+    transition: transform 0.3s;
+    transform: scale(1);
+  }
+
+  .todo-delete-button {
+    top: 75%;
+    left: 85%;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    position: absolute;
+    color: var(--faillure);
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    transition: transform 0.3s;
+    transform: scale(1);
+  }
+
+  .todo-done-button {
+    top: 75%;
+    left: 85%;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    position: absolute;
+    color: var(--success);
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    transition: transform 0.3s;
+    transform: scale(1);
+  }
+}
