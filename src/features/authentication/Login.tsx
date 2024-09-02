@@ -45,6 +45,8 @@ function Login() {
             />
           </div>
 
+
+
           <div>
             <button
               className="login-button"
@@ -57,8 +59,9 @@ function Login() {
           </div>
         </div>
       </div>
+        tt
       <img
-        src="https://delpuerto.patterson.k12.ca.us/UserFiles/Servers/Server_18037253/Templates/login-google.png"
+        src="https://miro.medium.com/v2/resize:fit:1400/1*u0bwdudgoyKjSLntsRcqiw.png"
         alt=""
         className="login-button-google"
         onClick={() => dispatch(loginUserWithGoogle())}

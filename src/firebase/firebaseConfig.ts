@@ -3,15 +3,21 @@ import { connectAuthEmulator, getAuth } from "firebase/auth";
 import { GoogleAuthProvider } from "firebase/auth";
 import { connectFirestoreEmulator, getFirestore } from "firebase/firestore";
 
+
+
 const firebaseConfig = {
-  apiKey: "AIzaSyAdZCsl3SUAON6k2F5iQut4mdxioDYTUv4",
-  authDomain: "willlovetodo.firebaseapp.com",
-  projectId: "willlovetodo",
-  storageBucket: "willlovetodo.appspot.com",
-  messagingSenderId: "114478023207",
-  appId: "1:114478023207:web:8b7491553c606312730402",
-  measurementId: "G-GRW99EYFF6",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASE_URL,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_MEASURMENT_ID
 };
+
+console.log({firebaseConfig})
+
 
 const app = initializeApp(firebaseConfig);
 

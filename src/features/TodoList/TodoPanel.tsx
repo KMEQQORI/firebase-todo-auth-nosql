@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+ import React, { useEffect, useState } from "react";
 import { IoCheckmarkDoneCircleSharp } from "react-icons/io5";
 import { BiMessageSquareAdd } from "react-icons/bi";
 import { TiDelete } from "react-icons/ti";
@@ -30,6 +30,7 @@ function TodoPanel() {
       userId: user?.uid || "",
       status: todoStatus.TODO,
     };
+    console.log({newTodo})
 
     dispatch(AddNewTodoToUserList(newTodo)).then(() => {
       dispatch(fetchUserTodoList(user?.uid as string));
